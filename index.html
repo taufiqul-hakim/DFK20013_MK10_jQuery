@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JQM Login - DFK20013</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+
+    <!-- PAGE 1 LOGIN -->
+    <div data-role="page" id="halamanLogin"data-theme="a">
+
+        <div data-role="header" data-theme="b">
+            <h1>Sistem DFK20013</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+
+            <h3>Sila Log Masuk</h3>
+
+            <form id="loginForm">
+
+                <label for="usr">Username:</label>
+                <input type="text" id="usr" placeholder="Masukkan nama anda">
+
+                <label for="psw">Password:</label>
+                <input type="password" id="psw" placeholder="Masukkan kata laluan">
+
+                <button type="submit" class="ui-btn ui-btn-b ui-corner-all">Masuk</button>
+
+            </form>
+
+
+            <!-- POPUP -->
+            <div data-role="popup" id="popupIsi">
+
+                <div data-role="header">
+                    <h1>Makluman</h1>
+                </div>
+
+                <div role="main" class="ui-content">
+                    <p>Sila isi username & password</p>
+
+                    <a href="#" class="ui-btn ui-btn-b" data-rel="back">OK</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div data-role="footer" data-position="fixed">
+            <h4>&copy; 2026 PTSS</h4>
+        </div>
+
+    </div>
+
+
+
+    <!-- PAGE 2 INFO -->
+    <div data-role="page" id="halamanInfo" data-theme="a">
+
+        <div data-role="header" data-theme="b">
+            <h1>Info Sistem</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+
+            <h3>Login Berjaya</h3>
+
+            <p>Selamat datang ke Sistem DFK20013.</p>
+
+            <p>Ini adalah contoh page selepas login.</p>
+
+            <a href="#halamanLogin" class="ui-btn ui-btn-b">Logout</a>
+
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>&copy; 2026 PTSS</h4>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
